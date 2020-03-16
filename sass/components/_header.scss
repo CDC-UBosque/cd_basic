@@ -1,0 +1,26 @@
+.field{
+	&--header-link-ueb{
+		a{
+			@include font-set($font-ag-medium, $size-11, $color-negro-60, 0,  1);
+			text-decoration:none;
+			display: block;
+		}
+	}
+	&--header-link-agenda {
+		a{
+			@include font-set($font-ag-bold, $size-14, $brand-color, 2px,  1);
+			text-decoration:none;
+			display: inline-block;
+			padding-right: 1rem;
+		}
+		border-right:1px solid $color-negro-20
+	}
+	&--header-link-contacto{
+		a{
+			@include font-set($font-ag-bold, $size-14, $color-negro-60, 2px,  1);
+			text-decoration:none;
+			display: inline-block;
+			margin-left: 1rem;
+		}
+	}
+}

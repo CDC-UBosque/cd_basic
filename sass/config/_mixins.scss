@@ -1,0 +1,99 @@
+// Mixins
+// --------
+// Mixins allow you to define styles that can be re-used / throughout the
+// stylesheet without needing to resort to / non-semantic classes like .float-
+// left. Mixins can also / contain full CSS rules, and anything else allowed /
+// elsewhere in a Sass document. They can even take / arguments which allows you
+// to produce a wide variety / of styles with very few mixins.
+
+// For complete documentation:
+// Sass mixins: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins
+// Bourbon mixins: http://bourbon.io/docs/
+
+// Mixins subtheme
+
+@mixin color-desborde($background: false) {
+    @if $background {background: $background;}
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        background: $background;
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: -5;
+    }
+    &::after {
+        left: auto;
+        right: 100%;
+        width: 200%;
+    }
+    &::before{
+        width: 500%;
+    }
+}
+@mixin color-bg-parts($background: false) {
+    position: relative;
+    &:before{
+        @if $background {background: $background;}
+        content: "";
+        position: absolute;
+        @include size(100%, 350px)
+        top: 0;
+        left: 0;
+        z-index: -5;
+    }
+}
+
+@mixin font-set($family: false, $size: false, $colour: false, $lspacing: false,  $lh: false) {
+    @if $family {font-family: $family}
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $lspacing { letter-spacing:  $lspacing; }
+    @if $lh { line-height: $lh; }
+}
+
+@mixin rotate-autor($top: false, $left: false) {
+    @if $top {top: $top;}
+    @if $left { left: $left; }
+    //position: absolute;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    transform-origin: top center;
+    margin-top: 3rem;
+}
+@mixin rotate-autor-abs($top: false, $left: false) {
+    @if $top {top: $top;}
+    @if $left { left: $left; }
+    position: absolute;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    transform-origin: top center;
+}
+
+@mixin color-desborde-cat($background: false) {
+    @if $background {background: $background;}
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        background: $background;
+        display: block;
+        height: 80%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: -1;
+    }
+    &::after {
+        left: auto;
+        right: 100%;
+        width: 500%;
+    }
+    &::before{
+        width: 500%;
+    }
+}

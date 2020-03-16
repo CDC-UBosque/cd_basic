@@ -1,0 +1,30 @@
+//@import "../config/config";
+
+// THEME: purely visual styling (“look-and-feel”) for a component.
+// Read more about SMACSS categorization for Drupal Themes: https://www.drupal.org/node/1887922
+// When following SMCASS, this would be used for dark/light themes (not general styling): https://smacss.com/book/type-theme
+
+// This file is complied separately so we can pull in config dependencies above
+// while also maintaining Drupals SMACSS structure.
+// @import "theme/theme--light"
+
+//normalize
+@import "base/typography";
+@import "vendor/normalize";
+
+// Base
+@import "base/field";
+@import "base/media";
+@import "base/buttons";
+
+// Base variables
+@import "config/config";
+
+// Components
+@import "components/header";
+@import "components/navigation";
+@import "components/block";
+@import "components/views";
+
+// Layout
+@import "layout/layout--grid";

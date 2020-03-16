@@ -1,0 +1,88 @@
+
+.region-header{
+	border-bottom: 1px solid $color-negro-10;
+	padding: 1rem 0;
+}
+.page-node-type-page{
+	.region-featured-top{
+		display: grid;
+		grid-template-columns: 1fr;
+		.block--block-breadcrumbs{
+			grid-area: 2 / 1 / 2 / 1;
+		}
+	}
+}
+.block{
+	&--block-main{
+		display: grid;
+		grid-template-columns: 70% 1fr;
+		&--grid{
+			.views-field{
+				&-title{
+					grid-area: 1 / 5 / 1 / 13;
+				}
+				&-body{
+					grid-area: 2 / 5 / 2 / 10;
+				}
+				&-field-imagen-del-servicio{
+					grid-area: 1 / 1 / 5 / 5;
+				}
+			}
+
+		}
+	}
+	&--main--atencion-wrap{
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		grid-column-gap: 25px;
+	}
+	&--block-team{
+		margin-top: 2rem;
+		.view-content{
+			.views-infinite-scroll-content-wrapper{
+			  	display: grid;
+		  		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		  		grid-gap: 30px;
+			}
+		}
+	}
+	&--block-blog{
+		.views-infinite-scroll-content-wrapper{
+			display: grid;
+	  		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	  		grid-gap: 30px;
+		}
+	}
+}
+
+#blocktabs-experiencias{
+	div[id*="blocktabs-experiencias-"]{
+		.views-infinite-scroll-content-wrapper{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 30px;
+			margin-top: 2rem;
+			.views-row{
+				display: grid;
+				grid-template-columns:repeat(12, 1fr);
+				border-bottom: 1px solid $brand-color;
+				padding-bottom: 1rem;
+				&:last-child{
+					border-bottom: 0;
+				}
+				.views-field{
+					&-field-image{
+						grid-area: 1 / 1 / 5 / 2;
+					}
+					&-field-nombre{
+						grid-area: 1 / 2 / 1 / 13;
+					}
+					&-body{
+						grid-area: 2 / 2 / 2 / 13;
+					}
+
+				}
+			}
+		}
+	}
+}

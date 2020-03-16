@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="24px" viewBox="0 0 31 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Inicio" transform="translate(-365.000000, -2387.000000)" fill="#7BC142">
+            <g id="Group-2" transform="translate(356.000000, 2324.000000)">
+                <g id="Group-15" transform="translate(8.000000, 61.000000)">
+                    <g id="Group-12" transform="translate(16.500000, 13.300000) scale(1, -1) translate(-16.500000, -13.300000) translate(0.000000, 0.800000)">
+                        <g id="Group-8">
+                            <g id="icon" transform="translate(6.900000, 15.100000) scale(-1, 1) translate(-6.900000, -15.100000) translate(0.900000, 5.600000)" fill-rule="nonzero">
+                                <path d="M7.875,6.3 C7.875,10.67325 4.34503125,14.2333333 0,14.2333333 L0,18.2 C6.51360938,18.2 11.8125,12.8618583 11.8125,6.3 C12.0233504,2.1 11.842525,0 11.2700239,0 C10.967525,0 9.83585037,2.1 7.875,6.3 Z" id="Path"></path>
+                            </g>
+                            <circle id="Oval" cx="8" cy="7" r="7"></circle>
+                        </g>
+                        <g id="Group-8-Copy" transform="translate(17.100000, 0.000000)">
+                            <g id="icon" transform="translate(6.600000, 15.100000) scale(-1, 1) translate(-6.600000, -15.100000) translate(0.600000, 5.600000)" fill-rule="nonzero">
+                                <path d="M7.875,6.3 C7.875,10.67325 4.34503125,14.2333333 0,14.2333333 L0,18.2 C6.51360937,18.2 11.8125,12.8618583 11.8125,6.3 C12.0802642,2.1 11.9278957,0 11.3553946,0 C11.0528957,0 9.89276418,2.1 7.875,6.3 Z" id="Path"></path>
+                            </g>
+                            <circle id="Oval" cx="7.7" cy="7" r="7"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

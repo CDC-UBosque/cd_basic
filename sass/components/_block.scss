@@ -1,0 +1,285 @@
+.block{
+	&-menu{
+		justify-self: end;
+		grid-area: 1 / 3 / 1 / 13;
+	}
+	&--block-breadcrumbs{
+		grid-row: 1 / 1;
+		margin-left: auto; /* 2 */
+		margin-right: auto; /* 2 */	
+		padding-left: 20px; /* 3 */
+		padding-right: 20px; /* 3 */
+		width: 100%; /* 1 */
+		 @media screen and (min-width: $break-slarge) {
+		    max-width:1366px; /* 1 */
+		}
+		@media screen and (max-width: $break-slarge) {
+		    max-width:80%; /* 1 */
+		}
+		@media screen and (max-width: $break-xsmedium) {
+		    max-width:100%; /* 1 */
+		}
+		nav{
+			ol{
+				margin-left: 0;
+				list-style: none;
+				padding-left: 0;
+				li{
+					display: inline-block;
+					@include font-set($font-ag-regular, $size-14, $color-negro-80, 0,  1);
+					a{
+						@include font-set($font-ag-regular, $size-14, $brand-color, 0,  1);
+						text-decoration: none;
+						&::after{
+							content: url('/themes/custom/cd_basic/images/icon-arrrow-next-g.svg');
+							padding-left: 12px;
+							padding-right: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+	&--block-quienes-somos{
+		position: relative;
+		.field--type-text-with-summary{
+			display: grid;
+			grid-template-columns: 50%;
+			grid-template-rows: 1fr;
+
+		}
+	}
+	&--block-personas{
+		justify-self: end;
+		//padding-bottom: 2rem;
+
+	}
+	&--block-instituciones{
+		grid-row: 1 / 1;
+		//padding-bottom: 2rem
+	}
+	&--block-title{
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+		background: $brand-color-light;
+		@include color-desborde($brand-color-light);
+	}
+	&--block-aliados{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-column-gap: 25px;
+		align-items: center;
+		justify-items: center;
+		width: 80%;
+		margin:0 auto;
+	}
+	&--block-quienes-somos{
+		background: url('/themes/custom/cd_basic/images/img-bg.png');
+		margin-top: -5px;
+		min-height: 400px;
+		&::after{
+			content:url('/themes/custom/cd_basic/images/hero-block--acerca-de.png');
+			right: 0;
+			bottom: -5px;
+			position: absolute;
+
+		}
+		.field--type-text-with-summary{
+			margin: 0 auto;
+			@media screen and (min-width: $break-slarge) {
+			    max-width:1366px; /* 1 */
+			}
+			@media screen and (max-width: $break-slarge) {
+			    max-width:80%; /* 1 */
+			}
+			@media screen and (max-width: $break-xsmedium) {
+			    max-width:100%; /* 1 */
+			}
+		}
+	}
+	&--block-proyectos{
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+		background: $brand-color-light;
+		@include color-desborde($brand-color-light);
+	}
+	&--block-main{
+		&--grid{
+			.view-content{
+				margin-top: 2rem;
+				display: grid;
+  				grid-gap: 30px;
+				.views-row{
+					display: grid;
+					grid-template-columns:repeat(12, 1fr);
+	  				border-top: 1px solid $color-negro-10;
+	  				padding: 2rem 0 ;
+
+				}
+			}
+		}
+	}
+
+	&--block-preagendamiento{
+		clear: left;
+		background: #75B83F;
+		@include color-desborde(#75B83F);
+		padding: 3.5rem 0;
+		&:before{
+			content:url('/themes/custom/cd_basic/images/img-bg-agendamiento.png');
+			left: 30%;
+			bottom: 0;
+			position: absolute;
+			z-index: 0;
+		}
+		.field--name-title-block{
+			color: $color-negro-0;
+		}
+		+.views-element-container{
+			display: none;
+		}
+	}
+	&--block-logos{
+		padding: 3rem 0;
+	}
+	&--block-aliados{
+		padding: 2rem 0;
+	}
+	&-views-blockexperiencia-block-1{
+		padding: 3rem 0;
+	}
+	&--quienes-wrap{
+		margin-top: 8%;
+	}
+	&-webform-block{
+		display: none;
+	}
+	&--block-main{
+		h2{
+			@include font-set($font-ag-ebold, $size-20, $color-negro-70, 0,  1.1);
+			text-align: left;
+		}
+		p{
+			@include font-set($font-ag-regular, $size-15, $color-negro-50, 0,  1.3);
+			text-align: left;
+			strong{
+				@include font-set($font-ag-bold, $size-15, $color-negro-70, 0,  1.3);
+			}
+		}
+	}
+	&--block-main--atencion{
+		padding-bottom: 2rem;
+		h2{
+			@include font-set($font-ag-ebold, $size-20, $color-negro-70, 0,  1.1);
+			text-align: left;
+		}
+		p, li{
+			@include font-set($font-ag-regular, $size-15, $color-negro-50, 0,  1.3);
+			text-align: left;
+			strong{
+				@include font-set($font-ag-bold, $size-15, $color-negro-70, 0,  1.3);
+			}
+		}
+
+	}
+	&--block-team{
+
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+		background: $brand-color-light;
+		@include color-desborde($brand-color-light);
+		.views-infinite-scroll-content-wrapper{
+			margin-top: 2rem;
+			.views-row{
+				padding: 2rem;
+				background: $color-negro-0;
+				border-radius: 3px;
+			}
+		}
+	}
+	&--main{
+		&--atencion-wrap{
+			margin-top: 1rem;
+			border-top: 1px solid $color-negro-10;
+			padding-top: 1rem;
+			margin-bottom: 1rem;
+			padding-bottom: 2rem;
+			border-bottom: 1px solid $color-negro-10;
+		}
+
+	}
+}
+.path-frontpage{
+	.block{
+		&--block-personas,
+		&--block-instituciones{
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			width: 50%;
+			float: left;
+			background: $brand-color-light;
+			@include color-desborde($brand-color-light);
+			padding-bottom: 2rem;
+			.field--name-body{
+				text-align: center;
+			}
+		}
+	}
+}
+.page-node-type-page{
+	.block{
+		&--block-personas,
+		&--block-instituciones,
+		&--block-consultorios,
+		&--block-atencion,
+		&--block-experiencias,
+		&--block-contacto{
+			.layout__region--content{
+				display: grid;
+				grid-template-columns: 1fr;
+				justify-items: center;
+				.field--name-field-imagen-cabezote{
+					grid-area: 1 / 1 / 1 / 2;
+				}
+				.field--name-field-titulo{
+					grid-area: 1 / 1 / 1 / 2;
+
+				}
+			}
+
+		}
+	}
+}
+
+#blocktabs-experiencias{
+	border:none;
+	ul.ui-tabs-nav{
+		background: none;
+		border:none;
+		//border-bottom: 1px solid $color-negro-10;
+		width:100%;
+		text-align: center;
+		position: relative;
+		&::before{
+			content: '';
+			width: 100%;
+			height: 1px;
+			background: $color-negro-10;
+			position: absolute;
+			bottom: 6px;
+			left: 0;
+
+		}
+		li{
+			display:inline-block;
+	        float: inherit;
+	        border: 0;
+	        background: none;
+		}
+	}
+	div[id*="blocktabs-experiencias-"]{
+		padding: 0;
+	}
+}
+
+

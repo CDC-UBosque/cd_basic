@@ -1,0 +1,208 @@
+// Base variables
+@import "typography";
+@import "../config/config";
+
+.field{
+	&--name-title-block{
+		@include font-set($font-ag-light, $size-26, $color-negro-70, 0,  1);
+		text-align: center;
+		//margin-top: 10%;
+    	margin-bottom: 1rem;
+    	position: relative;
+    	//padding-left: 2.5rem;
+    	//&::before{
+    	//	content: url('/themes/custom/cd_basic/images/creative-idea.svg');
+    	//	position: absolute;
+    	//	top: -3rem;
+    	//	left: 0;
+//
+    	//}
+    	&--left{
+    		@include font-set($font-ag-light, $size-26, $color-negro-70, 0,  1);
+			text-align: left;
+			margin-bottom: 2rem;
+    	}
+    	span{
+    		font-family: $font-ag-bold;
+    	}
+	}
+	&--name-body-block{
+		@include font-set($font-sf-regular-i, $size-16, $color-negro-0, 0,  1);
+		text-align: left;
+		&--center{
+			@include font-set($font-sf-regular-i, $size-16, $color-negro-0, 0,  1);
+			text-align: center;
+			position: relative;
+		}
+	}
+
+	&--type-text-with-summary{
+		text-align: center;
+	}
+	&--icon-agenda{
+		position: relative;
+		text-align: center;
+	}
+	&--header-link-ueb{
+		text-align: left;
+		padding-left: 20px;
+		&::before{
+			content: url('/themes/custom/cd_basic/images/icon-arrrow-prev-g.svg');
+			position: absolute;
+    		left: 0;
+		}
+	}
+	&--link-prea{
+		text-align: right;
+	}
+	&--name-destacado-servicios{
+		@include font-set($font-ag-light, $size-22, $color-negro-70, 0,  1.1);
+		text-align: left;
+	}
+	&--name-atencion-title{
+		@include font-set($font-ag-light, $size-20, $brand-color, 0,  1.1);
+		text-align: left;
+		margin-bottom: 1rem;
+		span{
+			font-family: $font-ag-ebold
+		}
+	}
+	&--name-atencion-body{
+		@include font-set($font-ag-regular, $size-15, $color-negro-50, 0,  1.3);
+		text-align: left;
+		margin-bottom: 2rem;
+		span{
+			font-family: $font-ag-bold
+		}
+		a{
+			@include font-set($font-ag-regular, $size-15, $brand-color, 1px,  1.3);
+			overflow-wrap: break-word;
+  			word-wrap: break-word;
+		}
+	}
+
+}
+
+.path-frontpage{
+	.field{
+		&--name-field-imagen-cabezote{
+			height: 220px;
+			position: relative;
+			img{
+				object-fit: cover;
+				height: 220px;
+				max-width: 100%;
+				border-radius: 3px;
+			}
+		}
+		&--name-field-titulo{
+			@include font-set($font-ag-black, $size-22, $color-negro-80, 0,  1);
+			text-align: center;
+			margin: 0.7rem 0;
+
+		}
+		&--name-body{
+			@include font-set($font-ag-regular, $size-14, $color-negro-70, 0,  1);
+			text-align: left;
+		}
+	}
+}
+.page-node-type-page{
+	.block--block-personas,
+	.block--block-instituciones,
+	.block--block-consultorios,
+	.block--block-atencion,
+	.block--block-experiencias,
+	.block--block-contacto{
+		.field{
+			&--name-body,
+			&--name-field-enlace{
+				display: none;
+			}
+			&--name-field-titulo{
+				@include font-set($font-ag-medium, $size-26, $brand-color-orange, 0,  1.1);
+				text-transform: uppercase;
+				z-index: 1;
+				display: block;
+				margin: 0 auto;
+				position: relative;
+				bottom: 0;
+				@media screen and (min-width: $break-slarge) {
+			    	width:1366px; /* 1 */
+			    	text-align: left;
+			    	margin-top: 15%;
+			    	position: relative;
+				}
+				@media screen and (max-width: $break-slarge) {
+				    width:80%; /* 1 */
+				    text-align: left;
+				}
+				@media screen and (max-width: $break-xsmedium) {
+				    width:100%; /* 1 */
+				    text-align: left;
+				}
+				&::after{
+					content: '';
+					width: 60px;
+					height: 1px;
+					background: $brand-color-orange;
+					position: absolute;
+					left: 27rem;
+					top: 1rem;
+				}
+			}
+
+		}
+	}
+}
+
+
+.block{
+	&--block-quienes-somos{
+		.field{
+			&--name-title-block{
+				color:$color-negro-0;
+				text-align: left;
+			}
+		}
+	}
+
+}
+
+.site-footer{
+	padding: 4rem 0 1rem;
+	border-top: 1px solid $color-negro-10;
+	h4{
+		text-align: left;
+		@include font-set($font-ag-bold, $size-16, $color-negro-80, 0,  1.1);
+
+	}
+	h5{
+		text-align: left;
+		@include font-set($font-ag-medium, $size-14, $color-negro-70, 0,  1.1);
+	}
+	p{
+		text-align: left;
+		@include font-set($font-ag-regular, $size-13, $color-negro-50, 0,  1.4);
+		a{
+			@include font-set($font-ag-regular, $size-13, $brand-color, 2px,  1.4);
+			text-decoration: none;
+		}
+	}
+	.region-footer-first{
+		h5+p{
+			float: left;
+			margin-right: 1rem;
+		}
+
+	}
+	.region-footer-fourth{
+		.field--name-body{
+			p{
+				text-align: center;
+				font-size: $size-12;
+				color: $color-negro-80;
+			}
+		}
+	}
+}

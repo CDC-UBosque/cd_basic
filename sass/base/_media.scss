@@ -1,0 +1,95 @@
+.views-field{
+	&-field-image{
+		img{
+			max-width: 100%;
+			height: auto;
+			border-radius:3px; 
+		}
+	}
+	&-field-imagen-equipo{
+		text-align: center;
+		img{
+			max-width: 130px;
+			height: auto;
+			border-radius:100px; 
+		}
+	}
+}
+.block--block-aliados{
+	img{
+		max-width: 250px;
+		max-height: 100px;
+		height: auto;
+	}
+}
+.owl-item{
+	img{
+		width: 100vw;
+	    height: 400px;
+	    object-fit: cover;
+	    object-position: center;
+	}
+}
+.field{
+	&--name-field-imagen-cabezote{
+		position: relative;
+		img{
+			width: 100vw;
+		    height: 400px;
+		    object-fit: cover;
+		    object-position: center;
+		}
+
+	}
+}
+.page-node-type-page{
+	.field{
+		&--name-field-imagen-cabezote{
+			&::before{
+				content: '';
+			    width: 100%;
+			    height: 400px;
+			    background: rgba(0, 0, 0, 0.3);
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			}
+
+		}
+	}
+}
+
+.block--block-proyectos{
+	.views-field-field-image{
+		height: 220px;
+		position: relative;
+		margin-bottom: 1rem;
+		img{
+			object-fit: cover;
+			height: 220px;
+			max-width: 100%;
+		}
+
+	}
+}
+.block-views-blockblog-block-1{
+	.views-field-field-image{
+		position: relative;
+		&::before{
+			content: '';
+		    width: 100%;
+		    height: 400px;
+		    background: rgba(0, 0, 0, 0.3);
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		}
+		img{
+			width: 100vw;
+		    height: 400px;
+		    object-fit: cover;
+		    object-position: center;
+		}
+		
+	}
+}

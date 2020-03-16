@@ -1,0 +1,24 @@
+cd_basic.small:
+  label: mobilesmall
+  mediaQuery: 'all and (min-width: 0px) and (max-width: 380px)'
+  weight: 0
+  multipliers:
+    - 1x
+cd_basic.mobile:
+  label: mobile
+  mediaQuery: 'all and (min-width: 381px) and (max-width: 787px)'
+  weight: 0
+  multipliers:
+    - 1x
+cd_basic.narrow:
+  label: tablet
+  mediaQuery: 'all and (min-width: 788px) and (max-width: 1179px)'
+  weight: 1
+  multipliers:
+    - 1x
+cd_basic.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 1180px)'
+  weight: 2
+  multipliers:
+    - 1x

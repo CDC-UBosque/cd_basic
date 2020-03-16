@@ -1,0 +1,246 @@
+.field{
+	&--type-link{
+		a{
+			padding: 0.5rem 1rem;
+			border:2px solid $brand-color;
+			@include font-set($font-ag-bold, $size-12,  $brand-color, 0,  1);
+			text-transform: uppercase;
+			display: inline-block;
+			text-decoration: none;
+			border-radius: 50px;
+			transition: all .2s ease-in-out;
+			&:hover{
+				background: $brand-color;
+				color: $color-negro-0;
+			}
+
+		}
+
+	}
+}
+.views-field{
+	&-view-node{
+		a{
+			padding: 0.5rem 1rem;
+			border:1px solid $color-negro-70;
+			@include font-set($font-ag-bold, $size-12,  $color-negro-70, 0,  1);
+			text-transform: uppercase;
+			display: inline-block;
+			text-decoration: none;
+			border-radius: 50px;
+			transition: all .2s ease-in-out;
+			&:hover{
+				background: $color-negro-70;
+				color: $color-negro-0;
+			}
+		}
+	}
+	&-field-enlace{
+		a{
+			padding: 0.5rem 1rem;
+			border:2px solid $brand-color-orange;
+			@include font-set($font-ag-bold, $size-12,  $brand-color-orange, 0,  1);
+			text-transform: uppercase;
+			display: inline-block;
+			text-decoration: none;
+			border-radius: 50px;
+			transition: all .2s ease-in-out;
+			&:hover{
+				background: $brand-color-orange;
+				color: $color-negro-0;
+			}
+		}
+		&--orange{
+			margin-top: 2rem;
+			text-align: center;
+			a{
+				padding: 0.5rem 1rem;
+				border:2px solid $brand-color-orange;
+				background: $brand-color-orange;
+				@include font-set($font-ag-bold, $size-12,  $color-negro-0, 1px,  1);
+				text-transform: uppercase;
+				display: inline-block;
+				text-decoration: none;
+				border-radius: 50px;
+				transition: all .2s ease-in-out;
+				&:hover{
+					background: transparent;
+					color: $color-negro-0;
+				}
+
+			}
+		}
+	}
+
+}
+.js-pager__items{
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	li{
+		a{
+			padding: 0.5rem 1rem;
+			border:2px solid $brand-color;
+			@include font-set($font-ag-bold, $size-12,  $brand-color, 0,  1);
+			text-transform: uppercase;
+			display: inline-block;
+			text-decoration: none;
+			border-radius: 50px;
+			transition: all .2s ease-in-out;
+			&:hover{
+				background: $brand-color;
+				color: $color-negro-0;
+			}
+		}
+	}
+}
+.block-field{
+	&--field-enlace{
+		margin-top: 1.5rem;
+		a{
+			padding: 0.5rem 1rem;
+			border:2px solid $color-negro-0;
+			background: $color-negro-0;
+			@include font-set($font-ag-bold, $size-12,  $brand-color, 1px,  1);
+			text-transform: uppercase;
+			display: inline-block;
+			text-decoration: none;
+			border-radius: 50px;
+			transition: all .2s ease-in-out;
+			&:hover{
+				background: transparent;
+				color: $color-negro-0;
+			}
+		}
+	}
+}
+
+.block-views-blockcarrusel-block-1{
+	.owl-controls{
+	    position: absolute;
+	    right: 0;
+	    bottom: 30px;	
+		.owl-buttons{
+			.owl-prev{
+				border-radius: 0;
+			    padding: 2rem 2rem 1.7rem 2rem;
+			    background: #222222;
+			    margin: 1px;
+			    display: inline;
+			    color: rgba(0,0,0,.0);
+				&::before{
+					content: url('/themes/custom/cd_basic/images/icon-arrrow-prev-w.svg');
+				}
+			}
+			.owl-next{
+				border-radius: 0;
+			    padding: 2rem 2rem 1.7rem 2rem;
+			    background: #222222;
+			    margin: 1px;
+			    display: inline;
+			    color: rgba(0,0,0,.0);
+				&::before{
+					content: url('/themes/custom/cd_basic/images/icon-arrrow-next-s.svg');
+
+				}
+			}
+		}
+	}
+}
+.block-views-blockexperiencia-block-1{
+	position: relative;
+	.view-footer{
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.owl-buttons{
+		position: absolute;
+		top: 2rem;
+		width: 100%;
+		.owl-prev{
+			float: left;
+			text-indent: -100px;
+			position: relative;
+			background: none !important;
+			&::before{
+				content: url('/themes/custom/cd_basic/images/icon-arrrow-prev.svg');
+
+			}
+		}
+		.owl-next{
+			float: right;
+			text-indent: -100px;
+			position: relative;
+			background: none !important;
+			&::before{
+				content: url('/themes/custom/cd_basic/images/icon-arrrow-next.svg');
+				right: -80px;
+    			position: relative;
+
+			}
+		}
+	}
+}
+
+.block{
+	&--block-agendar{
+		.field--name-body{
+			@include font-set($font-ag-medium, $size-12,  $brand-color, 1px,  1);
+		    cursor: pointer;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    position: fixed;
+		    bottom: 2rem;
+		    right: 1rem;
+		    width: 270px;
+		    height: 40px;
+		    transition: all 250ms ease-out;
+		    background: $color-negro-0;
+		    border-radius: .4em;
+		    box-shadow: -8px 20px 28px -9px rgba(0,0,0,0.41);
+		    &::after{
+		    	content: '';
+				position: absolute;
+				bottom: 0;
+				left: 10%;
+				width: 0;
+				height: 0;
+				border: 10px solid transparent;
+				border-top-color: $color-negro-0;
+				border-bottom: 0;
+				border-right: 0;
+				margin-left: -5px;
+				margin-bottom: -10px;
+		    }
+		    p{
+		    	padding-left: 1rem;
+		    }
+			&::before{
+				content: url('/themes/custom/cd_basic/images/icon-phone.svg');
+			}
+		}
+
+	}
+}
+#blocktabs-experiencias{
+	li.ui-tabs-active{
+		background: none;
+		border: none;
+		a{
+			@include font-set($font-ag-medium, $size-16,  $color-negro-70, 0,  1);
+			border-bottom: 3px solid $brand-color;
+		}
+	}
+	.ui-tabs-tab{
+		a{
+			@include font-set($font-ag-light, $size-16, $color-negro-50, 0,  1);
+			transition: all .2s ease-in-out;
+			&:hover{
+				font-family: $font-ag-regular;
+				color: $color-negro-80;
+			}
+		}
+	}
+
+}

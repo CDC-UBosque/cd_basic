@@ -1,0 +1,279 @@
+.views-field{
+	&-title{
+		a{
+			@include font-set($font-ag-bold, $size-16, $color-negro-80, 0,  1.1);
+			text-decoration: none;
+		}
+	}
+	&-field-destacado{
+		@include font-set($font-sf-regular-i, $size-14, $color-negro-70, 0,  1.1);
+	}
+
+	
+	&-field-enlace{
+		position: relative;
+		z-index: 1;
+		margin-top: 5rem;
+		.field-content{
+			margin: 0 auto;
+			@media screen and (min-width: $break-slarge) {
+		    	max-width:1366px; /* 1 */
+			}
+			@media screen and (max-width: $break-slarge) {
+			    max-width:80%; /* 1 */
+			}
+			@media screen and (max-width: $break-xsmedium) {
+			    max-width:100%; /* 1 */
+			}
+		}
+	}
+	&-field-image{
+		.field-content{
+			overflow:hidden;
+		}
+		a{
+			transition: all .2s ease-in-out;
+			display: block;
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+	&-field-imagen-del-servicio{
+		height: 300px;
+		position: relative;
+		img{
+			object-fit: cover;
+			height: 300px;
+			max-width: 100%;
+			border-radius: 3px;
+		}
+	}
+	&-field-cargo{
+		margin-top: 0.3rem;
+		@include font-set($font-ag-regular, $size-15, $color-negro-70, 0,  1.1);
+		text-align: center;
+	}
+	&-field-correo-electronico{
+		margin-top: 0.5rem;
+		a{
+			@include font-set($font-ag-regular, $size-13, $brand-color, 1px,  1.1);
+			text-decoration: none;
+			overflow-wrap: break-word;
+  			word-wrap: break-word;
+  			text-align: center;
+		}
+	}
+	
+}
+.path-frontpage{
+	.views-field{
+		&-field-nombre{
+			@include font-set($font-sf-regular-i, $size-14, $color-negro-70, 0,  1.1);
+			text-align: center;
+			.field-content{
+				position: relative;
+				padding-left: 190px;
+				margin-left: 30rem;
+				display: inline-block;
+				&::before{
+					content: '';
+					width: 180px;
+					height: 1px;
+					background: $color-negro-60;
+					position: absolute;
+					top: 10px;
+					left: 0;
+				}
+			}
+		}
+	}
+}
+.view-experiencia{
+	.views-field{
+		&-field-image{
+			img{
+				max-width: 80px;
+				border-radius: 50%;
+			}
+		}
+		&-field-nombre{
+			@include font-set($font-ag-medium, $size-18, $brand-color, 0,  1.1);
+		}
+		&-body{
+			@include font-set($font-ag-regular, $size-15, $color-negro-70, 0,  1.1);
+		}
+	}
+}
+
+.block-views{
+	&-blockblog-block-3{
+		.view-header{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			div:last-child{
+				justify-self: end;
+			}
+		}
+	}
+	&-blockexperiencia-block-1{
+		background: $brand-color-light;
+		@include color-desborde($brand-color-light);
+	}
+	&-blockblog-block-3{
+		clear: left;
+		padding: 3rem 0;
+		.view-content{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 25px;
+		}
+		.views-field-title{
+			text-transform: inherit;
+			line-height: 0.7;
+			padding: 1rem 0;
+			a{
+				color: $color-negro-70;
+			}
+			.field-content{
+				&::before{
+					background: none;
+				}
+			}
+		}
+		.views-field-field-destacado{
+			margin-bottom: 1rem;
+		}
+	}
+}
+.views-field{
+	&-field-image,
+	&-title,
+	&-field-enlace{
+		grid-area: 1 / 1 / 1 / 2;
+	}
+}
+.view-carrusel{
+	.owl-item{
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		
+	}
+}
+
+.block-views-blockcarrusel-block-1{
+	.views-field{
+		&-field-image{
+			&::before{
+				content: '';
+				width: 100%;
+				height: 400px;
+				background: rgba(0,0,0,.3);
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+}
+.block{
+	&--block-main--grid{
+		.views-field-title{
+			@include font-set($font-ag-ebold, $size-20, $color-negro-70, 0,  1.1);
+			padding-left: 2rem;
+			margin-top: 3rem;
+		}
+		.views-field-body{
+			@include font-set($font-ag-regular, $size-15, $color-negro-50, 0,  1.1);
+			padding-left: 2rem;
+		}
+	}
+	&--block-proyectos{
+		.views-infinite-scroll-content-wrapper{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 25px;
+		}
+		.views-field-body{
+			@include font-set($font-sf-regular-i, $size-14, $color-negro-70, 0,  1.1);
+		}
+	}
+	&--block-team{
+		.views-field-title{
+			margin-top: 1rem;
+			@include font-set($font-ag-ebold, $size-20, $color-negro-70, 0,  1.1);
+			text-align: center;
+			a{
+				@include font-set($font-ag-ebold, $size-20, $color-negro-70, 0,  1.1);
+			}
+		}
+	}
+	&--block-blog{
+		.views-field{
+			&-field-image{
+				margin-bottom: 0.5rem;
+			}
+			&-field-destacado{
+				margin:0.7rem 0 .5rem;
+			}
+			&-title{
+
+			}
+			&-field-destacado{
+				
+			}
+		}
+	}
+
+}
+.block-views{
+	&-blockcarrusel-block-1{
+		.views-field{
+			&-title{
+				@include font-set($font-ag-medium, $size-26, $brand-color-orange, 0,  1.1);
+				text-transform: uppercase;
+				position: relative;
+				z-index: 1;
+				.field-content{
+					display: block;
+					margin: 0 auto;
+					position: relative;
+					&::before{
+						content: '';
+						width: 60px;
+						height: 1px;
+						background: $brand-color-orange;
+						position: absolute;
+						left: 27rem;
+						top: 1rem;
+					}
+					@media screen and (min-width: $break-slarge) {
+				    	max-width:1366px; /* 1 */
+					}
+					@media screen and (max-width: $break-slarge) {
+					    max-width:80%; /* 1 */
+					}
+					@media screen and (max-width: $break-xsmedium) {
+					    max-width:100%; /* 1 */
+					}
+				}
+			}
+		}
+	}
+	&-blockexperiencia-block-1{
+		.views-field{
+			&-body{
+				@include font-set($font-ag-ulight, $size-33, $color-negro-60, 0,  1);
+				text-align: center;
+			}
+		}
+	}
+
+}
+
+.view-id-experiencia{
+	.field--name-title-block{
+		text-align: center;
+	}
+}
